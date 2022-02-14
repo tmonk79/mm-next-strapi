@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recipes",
+  "info": {
+    "name": "Recipes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Creation_Date": {
+      "type": "datetime"
+    },
+    "Body": {
+      "type": "richtext"
+    },
+    "Is_Veg": {
+      "type": "boolean"
+    }
+  }
+}
