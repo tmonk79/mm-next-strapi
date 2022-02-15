@@ -2,7 +2,8 @@
   "collectionName": "components_carousel_carousel_with_texts",
   "info": {
     "name": "Carousel with Text",
-    "icon": "archway"
+    "icon": "archway",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -20,6 +21,9 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "email": {
+      "type": "email"
     }
   }
 }
