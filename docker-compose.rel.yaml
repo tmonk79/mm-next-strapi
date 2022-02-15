@@ -1,0 +1,28 @@
+version: '3'
+services:
+  strapi:
+    image: mm-strapi:latest
+    build:
+      context: ./backend/strapi
+      dockerfile: Dockerfile
+    ports:
+      - '9000:1337'
+    volumes:
+      - ./backend/strapi/api:/strapi/api
+      - ./backend/strapi/components:/strapi/components
+      - ./backend/strapi/extensions:/strapi/extensions
+      - ./backend/strapi/config:/strapi/config
+    env_file:
+      - .env.rel
+
+
+  mysql:
+    image: mysql
+    platform: linux/x86_64
+    command: mysqld --default-authentication-plugin=mysql_native_password
+    volumes:
+      - ./data:/var/lib/mysql
+    ports:
+      - '3306:3306'
+    env_file:
+      - .env.rel
