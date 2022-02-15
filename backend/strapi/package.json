@@ -26,7 +26,7 @@
     "strapi-utils": "3.6.8"
   },
   "author": {
-    "name": "MediaMonks"
+    "name": "MediaMonks India Inc"
   },
   "strapi": {
     "uuid": "8071fd7f-3756-4ce9-b439-ddeb5eef174d"
@@ -35,5 +35,5 @@
     "node": ">=10.16.0 <=14.x.x",
     "npm": "^6.0.0"
   },
-  "license": "MIT"
+  "license": "MediaMonks India Inc"
 }
