@@ -2,6 +2,7 @@ version: '3'
 services:
   strapi:
     image: mm-strapi:latest
+    restart: always
     build:
       context: ./backend/strapi
       dockerfile: Dockerfile
@@ -14,10 +15,12 @@ services:
       - ./backend/strapi/config:/strapi/config
     env_file:
       - .env.rel
+    depends_on:
+      - mysql
 
 
   mysql:
-    image: mysql
+    image: mysql:8.0
     platform: linux/x86_64
     command: mysqld --default-authentication-plugin=mysql_native_password
     volumes:

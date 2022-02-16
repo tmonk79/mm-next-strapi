@@ -4,3 +4,7 @@
 - NextJS code is in frontend directory
 - Backend directory has a strapi folder
 - Strapi is running in Docker     
+
+```
+mysqldump -p strapi > dump.strapi.sql
+```

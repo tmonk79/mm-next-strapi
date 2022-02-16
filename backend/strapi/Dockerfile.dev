@@ -1,4 +1,5 @@
 FROM strapi/base:14-alpine as base
+ENV NODE_ENV development
 WORKDIR /strapi
 COPY . ./
 RUN npm install
