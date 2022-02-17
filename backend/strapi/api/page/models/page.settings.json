@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "name": "Page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PageName": {
+      "type": "string"
+    },
+    "metadata": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta.metadata"
+    },
+    "ContentSection": {
+      "type": "dynamiczone",
+      "components": [
+        "sections.feature-rows-group",
+        "sections.testimonials-group",
+        "sections.lead-form",
+        "sections.feature-columns-group",
+        "sections.hero",
+        "sections.large-video",
+        "sections.bottom-actions",
+        "sections.rich-text"
+      ]
+    },
+    "slugs": {
+      "type": "string"
+    }
+  }
+}
