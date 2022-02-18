@@ -1,5 +1,12 @@
 version: '3'
 services:
+  nginx: 
+    image: nginx:alpine
+    container_name: dev_nginx
+    ports:
+      - 80:80
+      - 443:443
+
   strapi:
     image: mm-strapi:latest
     restart: always
