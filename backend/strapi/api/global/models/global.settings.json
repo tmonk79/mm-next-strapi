@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "globals",
+  "info": {
+    "name": "Global"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Metadata": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta.metadata"
+    },
+    "Navbar": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.navbar"
+    },
+    "Footer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.footer"
+    }
+  }
+}
