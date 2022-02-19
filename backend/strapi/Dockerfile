@@ -7,4 +7,5 @@ RUN npm run build
 FROM strapi/base:14-alpine
 WORKDIR /strapi
 COPY --from=base /strapi .
+EXPOSE 1337
 CMD ["npm", "start"]
