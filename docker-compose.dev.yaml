@@ -1,6 +1,6 @@
 version: '3'
 services:
-  nginx: 
+  nginx:
     image: nginx:alpine
     container_name: dev_nginx
     volumes:
@@ -31,7 +31,6 @@ services:
       - .env.dev
     depends_on:
       - mysql
-
 
   mysql:
     image: mysql:8.0

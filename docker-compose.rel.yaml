@@ -1,20 +1,20 @@
 version: '3'
 services:
-  nginx: 
-      image: nginx:alpine
-      container_name: rel_nginx
-      volumes:
-      - './nginx/ssl_certs:/etc/ssl_certs'
-      - './nginx/conf.d/upstream.conf:/etc/nginx/conf.d/upstream.conf'
-      - './nginx/strapi.conf:/etc/nginx/sites-available/strapi.conf'
-      - './nginx/strapi.conf:/etc/nginx/sites-enabled/strapi.conf'
-      - './nginx/strapi.conf:/etc/nginx/conf.d/default.conf'
-      restart: always
-      ports:
-        - 80:80
-        - 443:443
-      depends_on:
-        - strapi
+  nginx:
+    image: nginx:alpine
+    container_name: rel_nginx
+    volumes:
+    - './nginx/ssl_certs:/etc/ssl_certs'
+    - './nginx/conf.d/upstream.conf:/etc/nginx/conf.d/upstream.conf'
+    - './nginx/strapi.conf:/etc/nginx/sites-available/strapi.conf'
+    - './nginx/strapi.conf:/etc/nginx/sites-enabled/strapi.conf'
+    - './nginx/strapi.conf:/etc/nginx/conf.d/default.conf'
+    restart: always
+    ports:
+      - 80:80
+      - 443:443
+    depends_on:
+      - strapi
 
   strapi:
     image: mm-strapi:latest
@@ -43,4 +43,4 @@ services:
       - '3306:3306'
     env_file:
       - .env.rel
-      
+
