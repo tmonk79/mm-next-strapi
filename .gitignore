@@ -2,3 +2,7 @@
 **.vscode**
 /data
 **.env**
+.DS_Store
+*crt*
+*key*
+*csr*

@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "description": "A Strapi application",
   "scripts": {
-    "develop": "strapi develop",
+    "develop": "npm install sharp && strapi develop",
     "start": "strapi start",
     "build": "strapi build --no-optimization",
     "strapi": "strapi"
@@ -13,7 +13,6 @@
   "dependencies": {
     "knex": "0.21.18",
     "mysql": "2.18.1",
-    "sharp": "^0.30.1",
     "strapi": "3.6.8",
     "strapi-admin": "3.6.8",
     "strapi-connector-bookshelf": "3.6.8",
