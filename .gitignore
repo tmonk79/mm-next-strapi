@@ -2,6 +2,7 @@
 **.vscode**
 /data
 /redis-data
+/meilisearch
 **.env**
 .DS_Store
 *crt*
