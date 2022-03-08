@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "recipeIingrident",
+  "collectionName": "recipeIngredients",
   "info": {
-    "name": "recipeIingrident",
+    "name": "recipeIngredients",
     "description": ""
   },
   "options": {

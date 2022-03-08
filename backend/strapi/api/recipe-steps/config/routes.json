@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/recipe-ingridents",
-      "handler": "recipe-ingrident.find",
+      "path": "/recipe-steps",
+      "handler": "recipe-steps.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/recipe-ingridents/count",
-      "handler": "recipe-ingrident.count",
+      "path": "/recipe-steps/count",
+      "handler": "recipe-steps.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/recipe-ingridents/:id",
-      "handler": "recipe-ingrident.findOne",
+      "path": "/recipe-steps/:id",
+      "handler": "recipe-steps.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/recipe-ingridents",
-      "handler": "recipe-ingrident.create",
+      "path": "/recipe-steps",
+      "handler": "recipe-steps.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/recipe-ingridents/:id",
-      "handler": "recipe-ingrident.update",
+      "path": "/recipe-steps/:id",
+      "handler": "recipe-steps.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/recipe-ingridents/:id",
-      "handler": "recipe-ingrident.delete",
+      "path": "/recipe-steps/:id",
+      "handler": "recipe-steps.delete",
       "config": {
         "policies": []
       }

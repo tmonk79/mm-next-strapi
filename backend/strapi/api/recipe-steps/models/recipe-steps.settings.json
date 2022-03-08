@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "recipee_steps",
+  "collectionName": "recipe_steps",
   "info": {
-    "name": "recipeeSteps"
+    "name": "recipeSteps"
   },
   "options": {
     "increments": true,
@@ -20,7 +20,7 @@
       "component": "steps-list.steps-component"
     },
     "recipes": {
-      "via": "recipee_steps",
+      "via": "recipe_steps",
       "collection": "recipes"
     }
   }

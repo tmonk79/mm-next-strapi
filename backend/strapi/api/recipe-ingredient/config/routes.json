@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/recipee-steps",
-      "handler": "recipee-steps.find",
+      "path": "/recipe-ingredient",
+      "handler": "recipe-ingredient.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/recipee-steps/count",
-      "handler": "recipee-steps.count",
+      "path": "/recipe-ingredient/count",
+      "handler": "recipe-ingredient.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/recipee-steps/:id",
-      "handler": "recipee-steps.findOne",
+      "path": "/recipe-ingredient/:id",
+      "handler": "recipe-ingredient.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/recipee-steps",
-      "handler": "recipee-steps.create",
+      "path": "/recipe-ingredient",
+      "handler": "recipe-ingredient.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/recipee-steps/:id",
-      "handler": "recipee-steps.update",
+      "path": "/recipe-ingredient/:id",
+      "handler": "recipe-ingredient.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/recipee-steps/:id",
-      "handler": "recipee-steps.delete",
+      "path": "/recipe-ingredient/:id",
+      "handler": "recipe-ingredient.delete",
       "config": {
         "policies": []
       }

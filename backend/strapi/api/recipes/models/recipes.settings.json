@@ -56,18 +56,18 @@
     "Is_Veg": {
       "type": "boolean"
     },
-    "reciepecategories": {
+    "recipeCategories": {
       "collection": "category",
       "via": "recipes",
       "dominant": true
     },
     "recipe_iingridents": {
-      "collection": "recipe-ingrident",
+      "collection": "recipe-ingredient",
       "via": "recipes",
       "dominant": true
     },
-    "recipee_steps": {
-      "collection": "recipee-steps",
+    "recipe_steps": {
+      "collection": "recipe-steps",
       "via": "recipes",
       "dominant": true
     }
