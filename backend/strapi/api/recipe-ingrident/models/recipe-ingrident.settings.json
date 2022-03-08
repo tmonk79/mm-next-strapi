@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recipeIingrident",
+  "info": {
+    "name": "recipeIingrident",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "product_title": {
+      "type": "string"
+    },
+    "ingrident": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ingridentss.ingriendts"
+    },
+    "recipes": {
+      "via": "recipe_iingridents",
+      "collection": "recipes"
+    }
+  }
+}

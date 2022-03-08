@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recipee_steps",
+  "info": {
+    "name": "recipeeSteps"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "product_title": {
+      "type": "string"
+    },
+    "StepsComponent": {
+      "type": "component",
+      "repeatable": true,
+      "component": "steps-list.steps-component"
+    },
+    "recipes": {
+      "via": "recipee_steps",
+      "collection": "recipes"
+    }
+  }
+}

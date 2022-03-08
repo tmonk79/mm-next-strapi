@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_ingridentss_ingriendts",
+  "info": {
+    "name": "Ingriendts",
+    "icon": "arrow-alt-circle-right"
+  },
+  "options": {},
+  "attributes": {
+    "ingrdentTitle": {
+      "type": "string"
+    },
+    "ingridentList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ingredient-list.ingredient-list"
+    }
+  }
+}

@@ -14,14 +14,62 @@
     "Title": {
       "type": "string"
     },
-    "Creation_Date": {
-      "type": "datetime"
+    "Recipe_Video_Url": {
+      "type": "text"
     },
-    "Body": {
-      "type": "richtext"
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Difficulty": {
+      "type": "enumeration",
+      "enum": [
+        "Easy",
+        "Medium",
+        "Hard",
+        "Pro"
+      ]
+    },
+    "Time": {
+      "type": "string"
+    },
+    "Serves": {
+      "type": "integer"
+    },
+    "Recipe_Servers_List": {
+      "type": "text"
+    },
+    "Ingredient_Tags": {
+      "type": "text"
+    },
+    "Relation_Products": {
+      "collection": "recipes"
     },
     "Is_Veg": {
       "type": "boolean"
+    },
+    "reciepecategories": {
+      "collection": "category",
+      "via": "recipes",
+      "dominant": true
+    },
+    "recipe_iingridents": {
+      "collection": "recipe-ingrident",
+      "via": "recipes",
+      "dominant": true
+    },
+    "recipee_steps": {
+      "collection": "recipee-steps",
+      "via": "recipes",
+      "dominant": true
     }
   }
 }

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/recipee-steps",
+      "handler": "recipee-steps.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/recipee-steps/count",
+      "handler": "recipee-steps.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/recipee-steps/:id",
+      "handler": "recipee-steps.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/recipee-steps",
+      "handler": "recipee-steps.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/recipee-steps/:id",
+      "handler": "recipee-steps.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/recipee-steps/:id",
+      "handler": "recipee-steps.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

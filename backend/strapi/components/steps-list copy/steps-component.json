@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_steps_list_steps_components",
+  "info": {
+    "name": "StepsComponent",
+    "icon": "ambulance"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "img_video": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_ingredient_list_ingredient_lists",
+  "info": {
+    "name": "IngredientList",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ingrdeientLabel": {
+      "type": "string"
+    },
+    "metricvalue": {
+      "type": "string"
+    },
+    "metricunit": {
+      "type": "enumeration",
+      "enum": [
+        "g",
+        "l",
+        "ml",
+        "tsp",
+        "cups",
+        "tbsp",
+        "packet"
+      ]
+    },
+    "imperialValue": {
+      "type": "string"
+    },
+    "ImperialUnit": {
+      "type": "enumeration",
+      "enum": [
+        "cups",
+        "tsp",
+        "tbsp",
+        "packet",
+        "g",
+        "l",
+        "ml"
+      ]
+    },
+    "buyUrl": {
+      "type": "text"
+    }
+  }
+}
