@@ -22,7 +22,8 @@
     "strapi-plugin-i18n": "3.6.8",
     "strapi-plugin-upload": "3.6.8",
     "strapi-plugin-users-permissions": "3.6.8",
-    "strapi-utils": "3.6.8"
+    "strapi-utils": "3.6.8",
+    "strapi-middleware-cache": "^2.1.7"
   },
   "author": {
     "name": "MediaMonks India Inc"
