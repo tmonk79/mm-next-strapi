@@ -1,9 +1,9 @@
 
 import Hero from '../components/hero';
-
+import Search from '../components/search'
 
 const Homepage = () => {
-    return ( <Hero /> );
+    return ( <Search />);
 }
  
 export default Homepage;
