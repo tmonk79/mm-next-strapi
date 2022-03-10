@@ -9,6 +9,8 @@ Add self-signed SSL for localhost development
 update hostfile /etc/hosts and add this entry
 127.0.0.0 api.dessertcorner.com
 127.0.0.0 admin.dessertcorner.com
+Run npm run build in ./backend/strapi
+move the build folder to ./nginx folder
 ```
 - This is a boiler plate repo for NextJS + Strapi
 - NextJS code is in frontend directory
