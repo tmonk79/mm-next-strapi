@@ -15,7 +15,7 @@ import { instantMeiliSearch } from '@meilisearch/instant-meilisearch';
 import styles from './search.module.css';
 
 const searchClient = instantMeiliSearch(
-  "http://localhost:7700",
+  "https://api.dessertcorner.com/search",
   ""
 );
 

@@ -6,7 +6,9 @@ IMPORTANT:
 Delete node_modules in ./backend/strapi
 Delete package-lock.json in ./backend/strapi
 Add self-signed SSL for localhost development
-update hostfile /etc/hosts and add this entry 127.0.0.0 api.dessertcorner.com
+update hostfile /etc/hosts and add this entry
+127.0.0.0 api.dessertcorner.com
+127.0.0.0 admin.dessertcorner.com
 ```
 - This is a boiler plate repo for NextJS + Strapi
 - NextJS code is in frontend directory
