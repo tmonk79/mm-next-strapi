@@ -12,16 +12,16 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "product_title": {
+    "Product_Title": {
       "type": "string"
     },
-    "ingrident": {
+    "Ingredient": {
       "type": "component",
       "repeatable": true,
-      "component": "ingridentss.ingriendts"
+      "component": "ingredients.ingredients"
     },
-    "recipes": {
-      "via": "recipe_iingridents",
+    "Recipes": {
+      "via": "Recipe_Ingredients",
       "collection": "recipes"
     }
   }

@@ -1,6 +1,6 @@
 {
   "kind": "collectionType",
-  "collectionName": "recipe_steps",
+  "collectionName": "Recipe_Steps",
   "info": {
     "name": "recipeSteps"
   },
@@ -11,7 +11,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "product_title": {
+    "Product_Title": {
       "type": "string"
     },
     "StepsComponent": {
@@ -19,8 +19,8 @@
       "repeatable": true,
       "component": "steps-list.steps-component"
     },
-    "recipes": {
-      "via": "recipe_steps",
+    "Recipes": {
+      "via": "Recipe_Steps",
       "collection": "recipes"
     }
   }

@@ -12,7 +12,7 @@
     "order": {
       "type": "integer"
     },
-    "img_video": {
+    "Image_Video_Url": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [

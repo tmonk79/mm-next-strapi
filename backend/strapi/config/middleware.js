@@ -7,9 +7,9 @@ module.exports = ({ env }) => ({
         max: 400,
         cacheTimeout: 400,
         enableEtagSupport: true,
-        logs: true,
+        logs: true, 
         populateContext: false,
-        models: ['recipes'],
+        models: ['recipes', 'recipeSteps'],
        redisConfig: {
           host: 'redis',
           port: 6379

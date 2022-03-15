@@ -23,3 +23,11 @@ move the build folder to ./nginx folder
 ```
 mysqldump -p strapi > dump.strapi.sql
 ```
+
+
+## MM-NextJS-Strapi Data Import
+
+ - The Migration script is available in the location backend/strapi/config/functions/bootstrap.js
+ - The sample data is available in the location backend/strapi/config/functions/recipe.json
+ - When we run docker build it automatically picks up the data file and start importing the recipe to Strapi
+ - The images are stored in the aws s3
