@@ -2,7 +2,7 @@ FROM strapi/base:14-alpine as base
 WORKDIR /strapi
 COPY . ./
 RUN npm install
-RUN npm run build
+# RUN npm run build
 
 FROM strapi/base:14-alpine
 WORKDIR /strapi
