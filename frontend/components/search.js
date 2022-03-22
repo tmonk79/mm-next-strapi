@@ -1,4 +1,7 @@
 import React from 'react';
+import Image from 'next/image'
+
+import {getStrapiMedia} from '../lib/strapi_helper/media'
 import {
   InstantSearch,
   Hits,
@@ -25,10 +28,16 @@ const Hit = ({ hit }) => (
     <div className="hit-Title">
       <Highlight attribute="Title" hit={hit} />
     </div>
-
-    <div className="hit-Ingredient_Tags">
-      <Snippet attribute="Ingredient_Tags" hit={hit} />
-    </div>
+    {/* { <div>
+    <Image
+     src={getStrapiMedia(hit.Image)} 
+      alt="Picture of the author"
+      width={500}
+      height={500}
+    />
+    </div> } */}
+    <img src={`https://api.dessertcorner.com${hit.Image.url}`} />
+  
   </div>
 );
 
@@ -42,6 +51,7 @@ function Search() {
     <SearchBox className={styles.box}/>
     <Hits hitComponent={Hit} />
   </InstantSearch>
+  
     </div>
     
   );

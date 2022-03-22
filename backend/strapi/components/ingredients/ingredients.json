@@ -1,15 +1,15 @@
 {
-  "collectionName": "components_ingridentss_ingriendts",
+  "collectionName": "components_ingredients_ingredients",
   "info": {
-    "name": "Ingriendts",
+    "name": "Ingredients",
     "icon": "arrow-alt-circle-right"
   },
   "options": {},
   "attributes": {
-    "ingrdentTitle": {
+    "Ingredient_Title": {
       "type": "string"
     },
-    "ingridentList": {
+    "Ingredient_List": {
       "type": "component",
       "repeatable": true,
       "component": "ingredient-list.ingredient-list"

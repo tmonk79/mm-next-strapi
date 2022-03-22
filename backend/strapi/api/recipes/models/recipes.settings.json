@@ -50,25 +50,20 @@
     "Ingredient_Tags": {
       "type": "text"
     },
-    "Relation_Products": {
+    "Related_Recipes": {
       "collection": "recipes"
     },
     "Is_Veg": {
       "type": "boolean"
     },
-    "recipeCategories": {
-      "collection": "category",
-      "via": "recipes",
-      "dominant": true
-    },
-    "recipe_iingridents": {
+    "Recipe_Ingredients": {
       "collection": "recipe-ingredient",
-      "via": "recipes",
+      "via": "Recipes",
       "dominant": true
     },
-    "recipe_steps": {
+    "Recipe_Steps": {
       "collection": "recipe-steps",
-      "via": "recipes",
+      "via": "Recipes",
       "dominant": true
     }
   }

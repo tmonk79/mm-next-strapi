@@ -7,13 +7,13 @@
   },
   "options": {},
   "attributes": {
-    "ingrdeientLabel": {
+    "Ingredient_Label": {
       "type": "string"
     },
-    "metricvalue": {
+    "Metric_Value": {
       "type": "string"
     },
-    "metricunit": {
+    "Metric_Unit": {
       "type": "enumeration",
       "enum": [
         "g",
@@ -22,25 +22,51 @@
         "tsp",
         "cups",
         "tbsp",
-        "packet"
+        "packets",
+        "packet",
+        "drops",
+        "cup",
+        "lt",
+        "tin",
+        "nos",
+        "pinch of",
+        "pinch",
+        "bars",
+        "glass",
+        "bowl",
+        "scoop",
+        "bars"
       ]
     },
-    "imperialValue": {
+    "Imperial_Value": {
       "type": "string"
     },
-    "ImperialUnit": {
+    "Imperial_Unit": {
       "type": "enumeration",
       "enum": [
         "cups",
+        "cup",
         "tsp",
         "tbsp",
+        "packets",
         "packet",
-        "g",
+        "g", 
         "l",
-        "ml"
+        "ml",
+        "drops",
+        "lt",
+        "tin",
+        "nos",
+        "pinch of",
+        "pinch",
+        "bars",
+        "glass",
+        "bowl",
+        "scoop",
+        "bars"
       ]
     },
-    "buyUrl": {
+    "Buy_Url": {
       "type": "text"
     }
   }
