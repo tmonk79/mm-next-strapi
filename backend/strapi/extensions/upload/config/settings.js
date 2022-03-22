@@ -1,11 +1,11 @@
 module.exports = {
     "provider": 'aws-s3',
     providerOptions: {
-        "accessKeyId": "AKIAT2BJ2BDX77RMS6P3",
-        "secretAccessKey": "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",
+        "accessKeyId": process.env.ACCESS_KEY,
+        "secretAccessKey": process.env.SECRET_KEY,
         "region": "ap-south-1",
         params: {
           "Bucket": "dc-recipe/Recipes",
         },
-      }, 
+      },
 }
